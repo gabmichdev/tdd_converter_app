@@ -24,7 +24,6 @@ def convert(request):
             "output_unit": output_unit,
             "output_value": round(output_value, 3),
         }
-        print(data)
         form = LengthConverterForm(initial=data)
     return render(
         request,
